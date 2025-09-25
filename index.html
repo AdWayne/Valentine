@@ -15,11 +15,10 @@
       background-color: #ffffff;
       font-family: 'Arial', sans-serif;
       margin: 0;
-      flex-direction: column; /* Установка столбцового направления для центрирования контента */
-    }
+      flex-direction: column; 
     #heart {
       color: red;
-      font-size: 400px; /* Увеличили размер сердца */
+      font-size: 400px;
       font-family: 'Arial', sans-serif;
       animation: heartbeat 1s infinite alternate;
     }
@@ -40,15 +39,15 @@
     }
 
     #proposal {
-      margin-top: -10px; /* Увеличили отступ */
+      margin-top: -10px;
       font-weight: lighter;
     }
 
     #buttons {
       display: flex;
       justify-content: center;
-      margin-bottom: 20px; /* Добавлен снизу отступ */
-      margin-top: -10px; /* Поднято расположение кнопок */
+      margin-bottom: 20px; 
+      margin-top: -10px; 
     }
 
     .button {
@@ -56,16 +55,16 @@
       padding: 10px 20px;
       font-size: 18px;
       cursor: pointer;
-      -webkit-appearance: button; /* Убираем стандартный стиль кнопки для Safari */
+      -webkit-appearance: button;
       -moz-appearance: none;
       appearance: none;
-      border: none; /* Убираем границы кнопки */
-      background-color: transparent; /* Прозрачный фон кнопки */
-      text-align: center; /* Выравниваем текст по центру */
+      border: none; 
+      background-color: transparent;
+      text-align: center;
     }
 
     .button:focus {
-      outline: none; /* Убираем обводку при фокусе */
+      outline: none; 
     }
 
     .button-yes {
@@ -84,7 +83,7 @@
 
     .happy-gif {
       max-width: 100%;
-      display: hidden; /* Скрыть GIF-анимацию изначально */
+      display: hidden;
       visibility: hidden;
     }
 
@@ -99,7 +98,7 @@
 
     @media only screen and (max-width: 600px) {
       #heart {
-        font-size: 270px; /* Уменьшили размер сердца для мобильных устройств */
+        font-size: 270px; 
       }
 
       #message, #proposal {
@@ -155,7 +154,7 @@
       document.getElementById('message').style.display = 'none';
       document.getElementById('proposal').style.display = 'none';
       document.getElementById('buttons').style.display = 'none';
-      document.querySelector('.happy-gif').style.display = 'block'; // Показать GIF-анимацию после нажатия кнопки "Да"
+      document.querySelector('.happy-gif').style.display = 'block';
       document.querySelector('.happy-gif').style.visibility = 'visible';
       document.querySelector('.yay-message').style.display = 'block';
     }
@@ -167,3 +166,4 @@
   </script>
 </body>
 </html>
+
